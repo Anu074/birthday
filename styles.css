@@ -1,0 +1,201 @@
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.photo-slider {
+    overflow: hidden;
+}
+
+.photo-slider .photos {
+    display: flex;
+    animation: slide 10s linear infinite;
+}
+
+.photo {
+    flex: 0 0 100%; /* Set the width of each photo */
+    max-width: 600px; /* Set the maximum width of the photo container */
+    box-sizing: border-box;
+    transition: transform 0.5s ease-in-out;
+}
+.clock {
+    font-size: 3rem;
+    color: #555;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 60px;
+}
+.clock-time {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+
+body {
+    background: url('./images/christmas-tree-2928142_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    cursor: url('./images/cursor.cur'), auto;
+}
+
+/* Styles for balloons */
+.balloons {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    animation: flyUp 20s linear infinite;
+}
+.balloons1 {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    animation: flyUp 16s linear infinite;
+}
+.balloons2 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-20%);
+    animation: flyUp 15s linear infinite;
+}
+.balloons3 {
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+    transform: translateX(-40%);
+    animation: flyUp 18s linear infinite;
+}
+.balloons4 {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    transform: translateX(-10%);
+    animation: flyUp 15s linear infinite;
+}
+
+
+
+@keyframes flyUp {
+    0% {
+        transform: translate(-50%, 100%);
+    }
+    100% {
+        transform: translate(-50%, -200vh);
+    }
+}
+
+/* Style for heart-shaped bubble */
+.heart-bubble {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff5a5f;
+    clip-path: polygon(50% 0%, 60% 20%, 50% 40%, 40% 20%);
+    animation: heart-bubble-animation 1s ease-out;
+}
+
+@keyframes heart-bubble-animation {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 1;
+    }
+}
+
+
+/* Waving water animation for the heading */
+.birthday-heading span {
+    display: inline-block;
+    animation: wave-animation 2.5s infinite;
+}
+
+@keyframes wave-animation {
+    0%, 100% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+}
+
+/* Set different colors for each letter */
+.birthday-heading span:nth-child(1) {
+    background: linear-gradient(180deg, #87CEEB 0%, #00bcd4 50%, #87CEEB 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.birthday-heading span:nth-child(2) {
+    background: linear-gradient(180deg, #ff5a5f 0%, #ff5a5f 50%, #ff5a5f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.birthday-heading span:nth-child(3) {
+    background: linear-gradient(180deg, #4CAF50 0%, #00bcd4 50%, #4CAF50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.birthday-heading span:nth-child(4) {
+    background: linear-gradient(180deg, #ff5a5f 0%, #ff5a5f 50%, #ff5a5f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.birthday-heading span:nth-child(5) {
+    background: linear-gradient(180deg, #4CAF50 0%, #00bcd4 50%, #4CAF50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(6) {
+    background: linear-gradient(180deg, #ff5a5f 0%, #ff5a5f 50%, #ff5a5f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(7) {
+    background: linear-gradient(180deg, #4CAF50 0%, #00bcd4 50%, #4CAF50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(8) {
+    background: linear-gradient(180deg, #ff5a5f 0%, #ff5a5f 50%, #ff5a5f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(9) {
+    background: linear-gradient(180deg, #4CAF50 0%, #00bcd4 50%, #4CAF50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(10) {
+    background: linear-gradient(180deg, #ff5a5f 0%, #ff5a5f 50%, #ff5a5f 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.birthday-heading span:nth-child(11) {
+    background: linear-gradient(180deg, #4CAF50 0%, #00bcd4 50%, #4CAF50 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}

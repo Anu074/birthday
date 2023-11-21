@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Celebration</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-cover bg-center" style="background-image: url('./images/christmas-tree-2928142_1280.jpg');">
+
+    <!-- Header Section -->
+    
+    <header class="text-white text-center py-16">
+        <h1 class="text-4xl font-bold birthday-heading"><span>H</span><span>a</span><span>p</span><span>p</span><span>y</span>
+            <span>B</span><span>i</span><span>r</span><span>t</span><span<h1>h</span><span>d</span><span>a</span><span>y</span>
+            <span>A</span><span>n</span><span>u</span><span>s</span><span>h</span><span>r</span><span>e</span><span>e</span>!</h1>
+        <p class="mt-4">Wishing you a life filled with love and joy.</p>
+        <!-- Age Calculator Section -->
+        <div class="age" id="age">
+            <div>Calculating...</div>
+        </div>
+        <div class="clock" id="clock">
+            <div class="clock-time"></div>
+        </div>
+
+        <!-- Custom Cursor -->
+        <div class="custom-cursor"></div>
+
+        
+    </header>
+
+     <!-- Balloons -->
+     <div class="balloons">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50" id="b2">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50" id="b3">
+    </div>
+    <div class="balloons1">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50">
+    </div>
+    <div class="balloons2">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50">
+    </div>
+    <div class="balloons3">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50" id="b2">
+        <img src="./images/balloons.png" alt="Balloons" width="50" height="50" id="b3">
+    </div>
+    <div class="balloons4">
+        <img src="./images/heart1.png" alt="Balloons" width="80" height="90">
+    </div>
+
+    
+
+
+    
+
+    <section class="container mx-auto mb-12">
+        <div class="photo-slider">
+            <div class="photos">
+                <!-- photos -->
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu.png" alt="Photo 1" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu1.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu2.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu3.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <!-- repeat -->
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu.png" alt="Photo 1" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu1.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu2.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                <div class="photo">
+                    <div class="relative overflow-hidden h-64 rounded-lg">
+                        <img src="./images/anu3.png" alt="Photo 2" class="object-cover w-full h-full">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Autoplaying Video Section -->
+    <section class="container mx-auto flex gap-x-20 py-28 max-w-7xl">
+        <!--Spotify playlist -->
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6sK80gpyHe4PHbsFvWJy3v?utm_source=generator&theme=0"
+         width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+
+        <div class="relative overflow-hidden rounded-lg">
+            <!-- Add the video link here -->
+            <iframe src="./images/anuvid.mp4" class=" rounded-lg" frameborder="1"
+                allowfullscreen width="550px" height="350px"></iframe>
+        </div>
+        
+    </section>
+    
+
+    <!-- JavaScript Section -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
