@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
+
     // Custom Cursor
     const customCursor = document.querySelector('.custom-cursor');
 
@@ -59,4 +60,6 @@ document.addEventListener("DOMContentLoaded", function () {
         customCursor.style.top = `${e.clientY}px`;
     });
 });
+
+
 
