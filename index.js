@@ -66,8 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('backgroundAudio').play();
 });
 
-// Show the pause button by default
-document.getElementById('pauseButton').style.display = 'block';
+
 
 // Play Button Click Event
 document.getElementById('playButton').addEventListener('click', function () {
