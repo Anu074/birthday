@@ -61,5 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Play the audio on page load
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('backgroundAudio').play();
+});
 
+// Show the pause button by default
+document.getElementById('pauseButton').style.display = 'block';
 
+// Play Button Click Event
+document.getElementById('playButton').addEventListener('click', function () {
+    // Show the audio element
+    document.getElementById('backgroundAudio').style.display = 'block';
+    // Play the audio
+    document.getElementById('backgroundAudio').play();
+    // Hide the play button
+    this.style.display = 'none';
+    // Show the pause button
+    document.getElementById('pauseButton').style.display = 'block';
+});
+
+// Pause Button Click Event
+document.getElementById('pauseButton').addEventListener('click', function () {
+    // Pause the audio
+    document.getElementById('backgroundAudio').pause();
+    // Hide the pause button
+    this.style.display = 'none';
+    // Show the play button
+    document.getElementById('playButton').style.display = 'block';
+});
