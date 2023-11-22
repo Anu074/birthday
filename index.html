@@ -63,7 +63,7 @@
     
 
     <section class="container mx-auto mb-12">
-        <div class="photo-slider">
+        <div class="photo-slider" loading="lazy">
             <div class="photos">
                 <!-- photos -->
                 <div class="photo">
@@ -123,13 +123,16 @@
 
         <div class="relative overflow-hidden rounded-lg">
             <!-- Add the video link here -->
-            <iframe src="./images/anuvid.mp4" class=" rounded-lg" frameborder="1"
-                allowfullscreen width="550px" height="350px"></iframe>
+            <iframe src="./images/anuvid.mp4" class="rounded-lg" frameborder="1" allowfullscreen width="550px" height="350px"></iframe>
         </div>
         
     </section>
 
-    <embed src="./images/Jaanu Flute Music (mp3cut.net) (1).mp3" loop="true" autostart="true" width="2" height="0" id="backgroundAudio">
+    <audio autoplay loop id="backgroundAudio">
+        <source src="./images/Jaanu Flute Music (mp3cut.net) (1).mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    
     
 
     <!-- JavaScript Section -->
