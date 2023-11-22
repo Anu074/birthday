@@ -2,25 +2,32 @@
 // ----------------------------
 // JavaScript for calculating and displaying age
 document.addEventListener("DOMContentLoaded", function () {
-    const birthDate = new Date("2006-11-28");
+    const birthDate = new Date("2006-11-24");
     const today = new Date();
 
     // Set the timezone to Bangladesh (Asia/Dhaka)
     const options = { timeZone: 'Asia/Dhaka' };
 
-    const ageInMilliseconds = today - birthDate;
-    const ageInSeconds = ageInMilliseconds / 1000;
-    const ageInMinutes = ageInSeconds / 60;
-    const ageInHours = ageInMinutes / 60;
-    const ageInDays = ageInHours / 24;
-    const ageInYears = ageInDays / 365;
+    
 
-    const years = Math.floor(ageInYears);
-    const months = Math.floor((ageInYears - years) * 12);
-    const days = Math.floor((ageInYears * 365) % 365);
+    // Calculate the difference between the two dates in milliseconds
+    const diff = today.getTime() - birthDate.getTime();
+
+    // Convert the difference to a date object
+    const age = new Date(diff);
+
+    // Get the year, month and day from the date object
+    const years = age.getUTCFullYear() - 1970;
+    const months = age.getUTCMonth();
+    const days = age.getUTCDate() - 1;
+
+     // Calculate the total days, hours and seconds from the difference
+     const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
+     const totalHours = Math.floor(diff / (1000 * 60 * 60));
+     const totalSeconds = Math.floor(diff / 1000);
 
     const ageContainer = document.getElementById('age');
-    ageContainer.innerHTML = `<div>${years} years, ${months} months, ${days} days</div>
+    ageContainer.innerHTML = `<div id="ymd">${years} years, ${months} months, ${days} days</div>
                            `;
 
     // Update the clock every second
