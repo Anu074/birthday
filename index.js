@@ -66,6 +66,25 @@ document.addEventListener("DOMContentLoaded", function () {
         customCursor.style.left = `${e.clientX}px`;
         customCursor.style.top = `${e.clientY}px`;
     });
+
+
+
+
+
+    document.addEventListener('mousemove', function (event) {
+        const swirl = document.createElement('div');
+        swirl.classList.add('swirl');
+        swirl.style.left = `${event.clientX}px`;
+        swirl.style.top = `${event.clientY}px`;
+        document.body.appendChild(swirl);
+
+        // Remove the swirl after animation
+        setTimeout(() => {
+            swirl.remove();
+        }, 1000);
+    });
+
+    
 });
 
 // Play the audio on page load
@@ -96,3 +115,10 @@ document.getElementById('pauseButton').addEventListener('click', function () {
     // Show the play button
     document.getElementById('playButton').style.display = 'block';
 });
+
+
+
+
+
+
+
